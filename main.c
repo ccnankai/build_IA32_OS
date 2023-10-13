@@ -12,7 +12,7 @@ int
 main(void)
 {
   kinit1(end,P2V(4*1024*1024));
-
+  seginit();
 }
 
 __attribute__((__aligned__(PGSIZE)))
