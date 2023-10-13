@@ -1,6 +1,7 @@
 OBJS = \
 	main.o\
 	string.o\
+	pm_alloctor.o\
 
 
 # Cross-compiling (e.g., on Mac OS X)

@@ -11,6 +11,7 @@ extern char end[]; // first address after kernel loaded from ELF file
 int
 main(void)
 {
+  kinit1(end,P2V(4*1024*1024));
 
 }
 

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/LocalRun/wendong.song/dev_gdb/github/custom_xv6",
-      "program": "/LocalRun/wendong.song/dev_gdb/github/custom_xv6/build/Debug/outDebug",
+      "cwd": "/LocalRun/wendong.song/dev_gdb/github/build_IA32_OS",
+      "program": "/LocalRun/wendong.song/dev_gdb/github/build_IA32_OS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
