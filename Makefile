@@ -1,8 +1,12 @@
 OBJS = \
+	console.o\
 	main.o\
 	string.o\
 	pm_alloctor.o\
 	vm.o\
+	lapic.o\
+	mp.o\
+	proc.o\
 
 
 # Cross-compiling (e.g., on Mac OS X)

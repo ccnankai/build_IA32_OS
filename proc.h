@@ -13,4 +13,5 @@ struct cpu {
 //   struct proc *proc;           // The process running on this cpu or null
 };
 
-struct cpu cpus[NCPU];
+extern struct cpu cpus[NCPU];
+extern int ncpu;

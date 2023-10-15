@@ -62,6 +62,7 @@
     "mmu.h": "c",
     "mp.h": "c",
     "defs.h": "c",
-    "proc.h": "c"
+    "proc.h": "c",
+    "x86.h": "c"
   }
 }
