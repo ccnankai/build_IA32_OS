@@ -16,6 +16,8 @@ int
 main(void)
 {
   kinit1(end,P2V(4*1024*1024));
+  //build kernel page table
+  kvmalloc();
   seginit();
   
   startothers();
@@ -27,10 +29,9 @@ main(void)
 static void
 mpenter(void)
 {
-  //todo:open
-  // switchkvm();
-  // seginit();
-  // lapicinit();
+  switchkvm();
+  seginit();
+  lapicinit();
   mpmain();
 }
 

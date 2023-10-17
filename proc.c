@@ -7,6 +7,12 @@
 #include "proc.h"
 
 
+// Must be called with interrupts disabled
+int
+cpuid() {
+  return mycpu()-cpus;
+}
+
 // Must be called with interrupts disabled to avoid the caller being
 // rescheduled between reading lapicid and running through the loop.
 struct cpu*

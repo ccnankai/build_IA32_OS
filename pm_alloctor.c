@@ -36,16 +36,14 @@ char *kalloc(void)
 }
 
 
-
 //free the page of physical memory pointed at p 
-void kfree_one(char *v)
+void kfree(char *v)
 {
     struct pfnode *pf;
     // if align， or [end,PHYSTOP]
     if((unsigned int)v% PGSIZE || v <end || V2P(v) >= PHYSTOP)
     {
-        //TODO: 
-        // panic("free one page error...");
+        panic("free one page error...");
     }
 
     memset(v, 1,PGSIZE);
@@ -62,10 +60,9 @@ void free_range(void *vstart, void *vend)
     p=(char*)PGROUNDUP((unsigned int)vstart);
     //manage 4K as a page 
     for(;p+PGSIZE<=(char*)vend;p+=PGSIZE){
-        kfree_one(p);
+        kfree(p);
     }
 }
-
 
 
 //still using entrypgdir
