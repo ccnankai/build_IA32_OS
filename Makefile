@@ -6,6 +6,9 @@ OBJS = \
 	vm.o\
 	lapic.o\
 	mp.o\
+	trapasm.o\
+	trap.o\
+	vectors.o\
 	proc.o\
 
 

@@ -72,3 +72,9 @@ kinit1(void *vstart, void *vend)
 {
   free_range(vstart, vend);
 }
+
+void
+kinit2(void *vstart, void *vend)
+{
+  free_range(vstart, vend);
+}
